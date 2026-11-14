@@ -1,0 +1,15 @@
+[package]
+name = "bot_discord_esgi"
+# Métadonnées de base de votre projet Rust
+version = "0.1.0"        # Version actuelle de votre application
+edition = "2024"         # Édition du langage Rust utilisée
+
+[dependencies]
+# Framework Discord moderne (inclut et réexporte serenity 0.12.5)
+poise = "0.7"
+
+# Toolkit SQL asynchrone (version 0.9.0)
+sqlx = { version = "0.9", features = ["runtime-tokio", "sqlite"] }
+
+# Runtime asynchrone multi-thread
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
